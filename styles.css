@@ -1,0 +1,128 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.video-container {
+    width: 100%;
+    height: auto; /* Altura automática para manter a proporção do vídeo */
+}
+
+video {
+    display: block; /* Remove espaços abaixo do vídeo */
+    width: 100%;
+    height: auto; /* Altura automática para manter a proporção */
+    object-fit: cover; /* Garante que o vídeo cubra toda a largura */
+}
+
+.entry-link-container {
+    text-align: center; /* Centraliza o link */
+    padding: 20px 0; /* Adiciona padding acima e abaixo para espaçamento */
+}
+
+.entry-link {
+    font-size: 24px;
+    color: gray;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+#recent-jobs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+#recent-jobs div {
+    background-color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form input, form textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+/*Grids*/
+
+#recent-jobs {
+    display: grid;
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.job {
+    display: grid;
+    grid-template-columns: 300px 1fr; /* 300px para a imagem, o restante para o texto */
+    align-items: start; /* Alinha o conteúdo no topo da célula */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.job-image a {
+    display: block;
+}
+
+.job-image img {
+    width: 500px; /* Faz a imagem preencher completamente a célula de grid destinada a ela */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras abaixo da imagem */
+}
+
+.job-desc {
+    /* Estilos adicionais para o texto podem ser adicionados aqui */
+}
+
+.job-desc h3 {
+    margin-top: 0;
+}
+
+/*Titulos das seções*/
+.section-title {
+    font-size: 48px; /* Define o tamanho da fonte */
+    font-weight: bold; /* Torna o texto em negrito */
+}
+
+/* Página deteilsBLOG */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+video {
+    display: block; /* Remove espaços abaixo do vídeo */
+    width: 100%; /* Estende o vídeo para cobrir a largura completa da página */
+    height: auto; /* Mantém a proporção do vídeo */
+}
+
+p {
+    margin: 20px; /* Adiciona um pouco de espaço em torno do texto */
+    padding: 0 10px; /* Adiciona padding horizontal para não colar no borda da página */
+}
+
