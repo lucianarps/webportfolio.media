@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Intro</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#recent-jobs">Recent Jobs</a></li>
+                <li><a href="#Resume">Resumé 2024</a></li>
+                <li><a href="#contact">Get in Touch</a></li>
+            </ul>
+           
+        </nav>
+
+    </header>
+    <main>
+        <div id="lottie-container" style="width: 400px; height: 400px; margin: auto;"></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+    <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('lottie-container'), // Referencia o elemento container
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'https://lottie.host/da882875-baf2-4496-bd66-a3c634231cf7/FIwX07fuMs.json' // Insira o caminho para o seu arquivo Lottie JSON
+        });
+    </script>
+    <section id="about">About</section>
+    <p>Luciana is a product designer passionate about developing products that positively impact people's lives. 
+        <br>She enjoys collaborative teamwork as well as working independently. 
+        <br> Luciana loves the creative possibilities that a career in design offers.</p>
+    <section id="recent-jobs">Recent Jobs</section>
+        <!-- Grid de trabalhos recentes será inserido aqui -->
+        <section id="recent-jobs">
+            <!-- Job 1 -->
+            <div class="job">
+                <div class="job-image"><a href="detailsBLOG.html"><img src="/IMG/BLOGGERCAM.png" alt="Job 1"></a></div>
+                <div class="job-desc">
+                    <h3>BloggerCAM</h3>
+                    <p>BlggerCAM is an update to regular mobile cameras. This way it's not needed to download a new app to customize photos. And it's
+                        free</p>
+                </div>
+            </div>
+            <!-- Job 2 -->
+            <div class="job">
+                <div class="job-image"><a href="detailsSticker.html"><img src="/IMG/Sticker.png" alt="Job 2"></a></div>
+                <div class="job-desc">
+                    <h3>Train Designer</h3>
+                    <p>Group academic project developed to the Toronto Railway Museum. That consists in an interactive experience where kids can design stickers to customize a toy train, while learning about train's history in Toronto  </p>
+                </div>
+            </div>
+            <!-- Job 3 -->
+            <div class="job">
+                <div class="job-image"><a href="detailsMindsight.html"><img src="IMG/MindSIGHT.png" alt="Job 3"></a></div>
+                <div class="job-desc">
+                    <h3>MindSIGHT</h3>
+                    <p>Academic job developed in group for the program Interactive Media Management. The project is a moodtracker app that identifies potencial psychiatric crisis while offers moodsoothing alternatives, as Attention Training Technique and meditation </p>
+                </div>
+            </div>
+            <!-- Job 4 -->
+            <div class="job">
+                <div class="job-image"><a href="detailsChocolate.html"><img src="/IMG/Brigadeiro Cake_dos Santos_Luciana.jpg" alt="Job 4"></a></div>
+                <div class="job-desc">
+                    <h3>Brigadeiro Cake</h3>
+                    <p>3D Composition modeled in Autodesk Maya</p>
+                </div>
+             <!-- Job 5 --> 
+             <div class="job">
+                
+                <div class="job-desc">
+                    <h3>Brigadeiro Cake</h3>
+                    <p>3D Composition modeled in Autodesk Maya</p>
+                </div>
+
+            </div>
+ </section>
+        
+        
+    </section>
+    <section id="Resume">Resumé 2024</section>
+    <div class="resume-download">
+        <h3>Download My Resume</h3>
+        <a href="/Files/Resumè_Luciana dos Santos_2024_H.pdf" download="Your_Resume_Name.pdf">Download PDF</a>
+    </div>
+    <section id="contact">Get in Touch</section>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
